@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTag - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li><a class = "active" href="index.html">EcoTag</a></li>
+        <li><a href="calc.html">Calculator</a></li>
+        <li><a href="wardrobe.html">Wardrobe</a></li>
+        <li><a href="newmat.html">Create Your Material</a></li>
+    </ul>
+    <h2>EcoTag</h2>
+    <div class="choice">
+        <label for="apparel">Select a category:</label>
+        <select name="clothes" id="clothes" size = "1" style="width:100px;" onchange="updateCategory()">
+            <option value="Dresses">Dresses</option>
+            <option value="Tops">Tops</option>
+            <option value="Pants">Pants</option>                    
+        </select>               
+    </div>
+    <div class="items">
+        <div class="item active" id="0">
+            <a id = "lnk0" target="_blank"
+                href="https://www.gap.com/browse/product.do?pid=826712012">
+                <img id = "img0" src="https://www.gap.com/webcontent/0054/321/356/cn54321356.jpg">
+            </a>
+        </div>
+        <div class=" item next" id="1">
+            <a id = "lnk1" href="https://bananarepublic.gap.com/browse/product.do?pid=755342002"
+                target="_blank">
+                <img id = "img1" src="https://bananarepublic.gap.com/webcontent/0053/933/081/cn53933081.jpg">
+            </a>
+        </div>
+        <div class="item" id="2">
+            <a id = "lnk2" target="_blank" href="https://www.gap.com/browse/product.do?pid=826432012">
+                <img id = "img2" src="https://bananarepublic.gap.com/webcontent/0028/658/394/cn28658394.jpg">
+            </a>
+        </div>
+        <div class="item" id="3">
+            <a id = "lnk3" target="_blank"
+                href="https://www.eileenfisher.com/organic-cotton-interlock-scoop-neck-sleep-dress/196124606478.html">
+                <img id = "img3"
+                    src="https://img.ltwebstatic.com/images2_pi/2018/06/26/15300043221304244622_thumbnail_600x799.webp">
+            </a>
+
+        </div>
+        <div class="item prev" id="4">
+            <a id = "lnk4" target="_blank"
+                href="https://www.zara.com/us/en/linen-shirtdress-p07771707.html">
+                <img id = "img4" src="https://bananarepublicfactory.gapfactory.com/webcontent/0028/865/308/cn28865308.jpg">
+            </a>
+
+        </div>
+        <div class="button-container">
+            <div class="button"><i class="fa fa-angle-left"></i></div>
+            <div class="button"><i class="fa fa-angle-right"></i></div>
+        </div>
+    </div>
+    <div class="desc" stle>
+        <h3 id="name"></h3>
+        <h3 id="dress_mat"></h3>
+        <h3 id="dress_mat2"></h3>
+    </div>
+    
+    <div id="container" style="width: 60%; height: 60%"></div>
+    <div class="tooltip">The outfit's EcoTag:
+        <span class="tooltiptext">EcoTag is a sustainability tool for the apparel industry. It Measures 6 Environmental Impacts of Material Production: Global warming, Nutrient pollution (eutrophication), Water scarcity, Fossil Fuel Depletion, Chemistry. Lower scores are better.</span>
+    </div>
+    <h2 id="result"></h2>
+    <button onclick="add()">Add To Wardrobe</button>
+</body>
+
+    <script src="data.js"></script>
+	<script src="script.js"></script>
+	
+</html>

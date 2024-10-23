@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(252, 245, 237);
+    font-family: 'Arima', cursive;
+  }
+  
+
+button {
+  margin: 0 -5px;  
+  transition: 0.2s ease-in all;
+  height:30px;
+  width: 180px;
+  margin:2%;
+  background-color:rgb(243, 197, 141);
+  color:maroon;
+  font-family: 'Arima', cursive;
+  font-size: 18px;
+  border-radius: 1%;
+  border:#b90000;
+  cursor: pointer;
+}
+
+button:focus { outline: none;}
+button:hover {background: rgba(134, 62, 62, 0.3);}
+
+h1{
+    text-align: center;
+  font-size: 25px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+}
+
+h2{
+    text-align: center;
+  font-size: 16px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+}
+
+h4{
+  font-size: 16px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+  position: absolute;
+  top:60%;
+  left: 40%;
+}
+
+#pic{
+    position: absolute;
+    top:63%;
+    left: 47%;
+  }
+
+  #blah
+  {
+    position: absolute;
+    top:70%;
+    left: 45%;
+    height:15%;
+  }
+
+
+.choice, .choice1, .choice2, .choice3
+{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+  position: absolute;
+  top:25%;
+  left:28%;
+}
+.choice1
+{
+  position: absolute;
+  top:30%;
+}
+.choice2
+{
+  position: absolute;
+  top:35%;
+}
+.choice3
+{
+  position: absolute;
+  top:40%;
+}
+label,select
+{
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Arima', cursive;
+  font-size: 16px;
+} 
+ #calc{
+  position: absolute;
+  top:45%;
+  left:40%;
+ }
+
+ #add
+ {
+    position: absolute;
+  top:85%;
+  left:40%;
+ }
+
+ 
+ #container 
+ {
+   position:absolute;
+   top: 11%;
+   left: 50%;
+   color:maroon;    
+ }
+ 
+ #result
+ {
+    position:absolute;
+    top: 55%;
+    left: 42%;
+    color:maroon;    
+ }
+
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em;
+    overflow: hidden;
+    background:rgb(252, 214, 143);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:#ddaa73;
+  }
+  
+  li a.active {
+    color: maroon;
+    background-color: #f0c246
+  ;
+  }
+  
+    .btn-group {
+      display: block;
+      margin: 0 auto;
+      justify-content: center;
+    }

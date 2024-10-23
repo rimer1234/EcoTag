@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTag - Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="newmat.css" />
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">EcoTag</a></li>
+        <li><a href="calc.html">Calculator</a></li>
+        <li><a href="wardrobe.html">Wardrobe</a></li>
+        <li><a class="active" href="newmat.html">Create Your Material</a></li>
+    </ul>
+    <h1>Eco Create</h1>
+    <h2>Select the attributes of your clothing and create a new blended material</h2>
+    <div class="slider">
+       <label for="fader">Durability&nbsp;&nbsp;&nbsp;&nbsp;</label>
+       <input type="range" min="0" max="100" value="20" id="dur" step="1" list="volsettings" oninput="durability(this.value)">
+       <datalist id="volsettings">
+           <option>0</option>
+           <option>20</option>
+           <option>40</option>
+           <option>60</option>
+           <option>80</option>
+           <option>100</option>
+       </datalist>
+    </div>
+    <div class="slider1">
+        <label for="fader">Softness&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="range" min="0" max="100" value="20" id="soft" step="1" list="volsettings" oninput="softness(this.value)">
+        <datalist id="volsettings">
+            <option>0</option>
+            <option>20</option>
+            <option>40</option>
+            <option>60</option>
+            <option>80</option>
+            <option>100</option>
+        </datalist>
+     </div>
+
+     <div class="slider3">
+        <label for="fader">Warmth&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="range" min="0" max="100" value="20" id="soft" step="1" list="volsettings" oninput="warmth(this.value)">
+        <datalist id="volsettings">
+            <option>0</option>
+            <option>20</option>
+            <option>40</option>
+            <option>60</option>
+            <option>80</option>
+            <option>100</option>
+        </datalist>
+     </div>
+
+     <div class="slider4">
+        <label for="fader">Sheen&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="range" min="0" max="100" value="20" id="soft" step="1" list="volsettings" oninput="sheen(this.value)">
+        <datalist id="volsettings">
+            <option>0</option>
+            <option>20</option>
+            <option>40</option>
+            <option>60</option>
+            <option>80</option>
+            <option>100</option>
+        </datalist>
+     </div>
+
+     <div class="slider5">
+        <label for="fader">DryFit&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="range" min="0" max="100" value="20" id="soft" step="1" list="volsettings" oninput="dryfit(this.value)">
+        <datalist id="volsettings">
+            <option>0</option>
+            <option>20</option>
+            <option>40</option>
+            <option>60</option>
+            <option>80</option>
+            <option>100</option>
+        </datalist>
+     </div>
+   
+    <h2 id = "result"></h2>
+    <div id="container" style="width: 60%; height: 60%"></div>
+</body>
+<script src="data.js"></script>
+<script src="newmat.js"></script>
+	
+</html>

@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(252, 245, 237);
+    font-family: 'Arima', cursive;
+  }
+  
+  .items {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .items .item {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    border-radius: 80%;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  }
+  
+  .item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-130%, -50%);
+  }
+  
+  .item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(30%, -50%);
+  }
+  
+  .items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    z-index: 100;
+  }
+  
+  .button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .button-container .button:hover {
+    opacity: 1;
+  }
+  
+  .button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(34, 32, 32);
+    border-radius: 50%;
+    z-index: -99;
+  }
+  
+  .button-container .button:nth-child(1) {
+    float: left;
+  }
+  
+  .button-container .button:nth-child(2) {
+    float: right;
+  }
+
+  .desc 
+  {
+    margin:auto;
+    text-align: center;
+    color:maroon;
+    top: 75%;
+    left: 20%;
+    position:absolute;
+  }
+
+  #container 
+  {
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    color:maroon;    
+  }
+  
+/* Float four columns side by side */
+.column {
+  float: left;  
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;  
+  position: absolute;
+  top:70%;
+  left:10%;
+}
+
+.row2 {
+  margin: 0 -5px;  
+  position: absolute;
+  top:70%;
+  left:60%;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+button {
+  margin: 0 -5px;  
+  transition: 0.2s ease-in all;
+  height:30px;
+  width: 100px;
+  margin:2%;
+  background-color:rgb(243, 197, 141);
+  color:maroon;
+  font-family: 'Arima', cursive;
+  font-size: 18px;
+  border-radius: 1%;
+  border:#b90000;
+  cursor: pointer;
+}
+
+button:focus { outline: none;}
+button:hover {background: rgba(134, 62, 62, 0.3);}
+
+.choice, .choice1, .choice2, .choice3
+{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+  position: absolute;
+  top:18%;
+  left:45%;
+}
+.choice1
+{
+  position: absolute;
+  top:15%;
+  left:30%;
+}
+.choice2
+{
+  position: absolute;
+  top:20%;
+  left:30%;
+}
+.choice3
+{
+  position: absolute;
+  top:25%;
+  left:30%;
+}
+label,select
+{
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Arima', cursive;
+  font-size: 16px;
+} 
+ button{
+  position: absolute;
+  top:85%;
+  left:72%;
+  height: 30px;
+  width:180px;
+  font-size: 16px;
+ }
+  
+
+
+ h2{
+    position:absolute;
+    top: 8%;
+    left: 50%;
+    color:maroon;    
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+  overflow: hidden;
+  background:rgb(252, 214, 143);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: maroon;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#ddaa73;
+}
+
+li a.active {
+  color: maroon;
+  background-color: #f0c246
+;
+}
+
+  .btn-group {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+
+  #result {
+    position: absolute;
+    top:79%;
+    left:85%;  
+    font-size: 22px;
+  }
+
+  /* Tooltip container */
+.tooltip {
+  position: absolute;
+  color: maroon;
+  font-size: 18px;
+  top:82%;
+  left:74%;  
+  border-bottom: 1px dotted maroon;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 14px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

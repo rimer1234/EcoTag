@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(252, 245, 237);
+    font-family: 'Arima', cursive;
+  }
+  
+
+button {
+  margin: 0 -5px;  
+  transition: 0.2s ease-in all;
+  height:30px;
+  width: 180px;
+  margin:2%;
+  background-color:rgb(243, 197, 141);
+  color:maroon;
+  font-family: 'Arima', cursive;
+  font-size: 18px;
+  border-radius: 1%;
+  border:#b90000;
+  cursor: pointer;
+}
+
+button:focus { outline: none;}
+button:hover {background: rgba(134, 62, 62, 0.3);}
+
+h1{
+    text-align: center;
+  font-size: 25px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+}
+
+h2{
+    text-align: center;
+  font-size: 16px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+}
+
+h4{
+  font-size: 16px;
+  font-family: 'Arima', cursive;
+  color: maroon;
+  position: absolute;
+  top:55%;
+  left: 40%;
+}
+
+ 
+ #result
+ {
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    color:maroon;  
+    text-align: left;  
+    font-size: 12px;
+ }
+
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em;
+    overflow: hidden;
+    background:rgb(252, 214, 143);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:#ddaa73;
+  }
+  
+  li a.active {
+    color: maroon;
+    background-color: #f0c246
+  ;
+  }
+  .slider {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background-color: #f9cb9a;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 15px 20px #7E6D5766;
+}
+.slider label {
+    font-size: 14px;
+    color: maroon;
+}
+.slider input[type="range"] {
+    width: 420px;
+    height: 2px;
+    background: black;
+    border: none;
+    outline: none;
+}
+
+.slider1 {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  background-color: #f9cb9a;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 15px 20px #7E6D5766;
+}
+.slider1 label {
+  font-size: 14px;
+  color: maroon;
+}
+.slider1 input[type="range"] {
+  width: 420px;
+  height: 2px;
+  background: black;
+  border: none;
+  outline: none;
+}
+
+.slider3 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  background-color: #f9cb9a;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 15px 20px #7E6D5766;
+}
+.slider3 label {
+  font-size: 14px;
+  color: maroon;
+}
+.slider3 input[type="range"] {
+  width: 420px;
+  height: 2px;
+  background: black;
+  border: none;
+  outline: none;
+}
+
+.slider4 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  background-color: #f9cb9a;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 15px 20px #7E6D5766;
+}
+.slider4 label {
+  font-size: 14px;
+  color: maroon;
+}
+.slider4 input[type="range"] {
+  width: 420px;
+  height: 2px;
+  background: black;
+  border: none;
+  outline: none;
+}
+
+.slider5 {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  background-color: #f9cb9a;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 15px 20px #7E6D5766;
+}
+.slider5 label {
+  font-size: 14px;
+  color: maroon;
+}
+.slider5 input[type="range"] {
+  width: 420px;
+  height: 2px;
+  background: black;
+  border: none;
+  outline: none;
+}
+
+#container 
+{
+  position:absolute;
+  top: 20%;
+  left: 30%;
+  color:maroon;    
+}

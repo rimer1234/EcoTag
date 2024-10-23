@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTag - Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="calc.css" />
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a  href="index.html">EcoTag</a></li>
+        <li><a class = "active" href="calc.html">Calculator</a></li>
+        <li><a href="wardrobe.html">Wardrobe</a></li>
+        <li><a href="newmat.html">Create Your Material</a></li>
+    </ul>
+    <h1>What is the EcoTag of your outfit?</h1>
+    <h2>Find the EcoTag of Your Favorite Outfit</h2>
+    <div class="choice">        
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Nylon">Nylon</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Modal">Modal</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Wool">Wool</option> 
+            <option value="Viscose">Viscose</option>    
+        </select>         
+        <input type="text" id="pct" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <div class="choice1">
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes1" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Nylon">Nylon</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Modal">Modal</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Wool">Wool</option> 
+            <option value="Viscose">Viscose</option>                   
+        </select>         
+        <input type="text" id="pct1" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <div class="choice2">
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes2" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Nylon">Nylon</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Modal">Modal</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Wool">Wool</option> 
+            <option value="Viscose">Viscose</option>                      
+        </select>         
+        <input type="text" id="pct2" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <div class="choice3">
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes3" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Nylon">Nylon</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Modal">Modal</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Wool">Wool</option> 
+            <option value="Viscose">Viscose</option>                         
+        </select>         
+        <input type="text" id="pct3" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <button id = "calc" onclick="calcScores()">Calculate</button>
+    <button id = "add" onclick="add()">Add To Wardrobe</button>
+    <h4>Select Image:</h4>
+    <input id = "pic" type='file' onchange="readURL(this);" accept='image/*' style="color:maroon"/>
+    <img id="blah" src = "myshirt.jpg">
+    <h2 id = "result"></h2>
+    <div id="container" style="width: 60%; height: 60%"></div>
+</body>
+<script src="data.js"></script>
+<script src="calc.js"></script>
+	
+</html>
